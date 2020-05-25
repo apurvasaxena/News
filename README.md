@@ -1,10 +1,10 @@
 # News
-This project shows how to fetch data from local database using ROOM and if there is no local data saved, fetch data from web server api using RxJAVA and RETROFIT.
+This project shows how to fetch data from local database using ROOM. If there is no local data saved in app then fetch data from web server api using RxJAVA and RETROFIT.
 
 ## Functionality
 The app is composed of 2 main screens:
-1. News List Screen: It allows to fetch data from web server and save it in local database for future use and intents data to next screen.
-2. New Detail Screen: The 2nd screen is Details screen. It shows details of the articles.
+1. News List Screen: It allows users to fetch data from web server and save it in local database for future use.
+2. New Detail Screen: This screen shows details of the news articles.
 
 ## Libraries
 * Kotlin
