@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootview"
+    android:orientation="vertical"
+    tools:context=".features.newsArticles.view.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/mainpage_title" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_back"-->
+<!--            android:onClick="onClick"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:padding="?listPreferredItemPaddingLeft"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@android:drawable/a"-->
+<!--            android:layout_height="wrap_content"/>-->
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:transitionName="@string/transition_name"
+            android:padding="?listPreferredItemPaddingLeft"
+            >
+
+            <ImageView
+                android:id="@+id/tvmedia"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/tvtitle"
+                    style="@style/Tv_title" />
+                <TextView
+                    android:id="@+id/tvsourcename"
+                    style="@style/TvSecondary"
+                    android:layout_marginTop="@dimen/margin_top"
+                     />
+                <TextView
+                    android:id="@+id/tvdescription"
+                    style="@style/TvSecondary"
+                    android:layout_marginTop="16dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvpublished"
+                style="@style/TvSecondary"
+                android:layout_marginTop="@dimen/margin_top"
+                />
+            <TextView
+                android:id="@+id/tvurl"
+                style="@style/TvSecondary"
+                android:autoLink="web"
+                android:layout_marginTop="@dimen/margin_top"
+                />
+        </LinearLayout>
+</LinearLayout>
